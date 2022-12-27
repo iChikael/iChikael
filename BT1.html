@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tính tổng các số từ 1 đến n</title>
+</head>
+<body>
+  <h1>Tính tổng các số từ 1 đến n</h1>
+  <form>
+    Nhập n: <input type="number" id="n" value="10"><br>
+    <input type="button" value="Tính tổng" onclick="sumNumbers()">
+  </form>
+  <p>Kết quả: <span id="result"></span></p>
+  <script>
+    function sumNumbers() {
+      // Lấy giá trị n
+      var n = document.getElementById("n").value;
+
+      // Khởi tạo biến tổng với giá trị ban đầu là 0
+      var sum = 0;
+
+      // Duyệt qua từng số từ 1 đến n
+      for (var i = 1; i <= n; i++) {
+        // Cộng dồn tổng
+        sum += i;
+      }
+
+      // Hiển thị kết quả
+      document.getElementById("result").innerHTML = sum;
+    }
+  </script>
+</body>
+</html>
