@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Tính toán giá điện</title>
+</head>
+<body>
+  <h1>Tính toán giá điện</h1>
+  <form>
+    Nhập số lượng điện tiêu thụ (kWh):
+    <input type="text" id="consumption"><br>
+    <input type="button" value="Tính" onclick="calculateElectricityBill()">
+  </form>
+  <p id="result"></p>
+  <script>
+    function calculateElectricityBill() {
+      
+      var consumption = document.getElementById("consumption").value;
+
+      
+      var rate;
+      if (consumption <= 50) {
+        rate = 1484;
+      } else if (consumption <= 100) {
+        rate = 1533;
+      } else if (consumption <= 200) {
+        rate = 1786;
+      } else if (consumption <= 300) {
+        rate = 2242;
+      } else if (consumption <= 400) {
+        rate = 2503;
+      } else {
+        rate = 2587;
+      }
+
+      
+      var result = consumption * rate;
+      document.getElementById("result").innerHTML = "Giá điện là: " + result + " VND";
+    }
+  </script>
+</body>
+</html>
