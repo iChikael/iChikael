@@ -136,15 +136,16 @@
 // console.log(s);
 
 //b4.2
-var s = 0 
-var i = 1
-var n = 20
-do {
-    s = s + 1/(2*i);
-    i++
-}
-while (i<=n);
-console.log(s);
+
+// var s = 0 
+// var i = 1
+// var n = 20
+// do {
+//     s = s + 1/(2*i);
+//     i++
+// }
+// while (i<=n);
+// console.log(s);
 
 
 
@@ -156,6 +157,30 @@ console.log(s);
 // }
 // console.log(s);
 
+//b5.1
+
+// var s = 0
+// var n =10
+// var i =1 
+
+// while(i<=n){
+//     s = s + 1/(2*i+1);
+//     i++;
+// }
+// console.log(s);
+
+//b5.2
+
+// var s = 0
+// var n =10
+// var i =1
+// do{
+//     s =s + 1/(2*i+1);
+//     i++;
+// }
+// while(i<=n);
+// console.log(s);
+
 //b6
 
 // var s = 0
@@ -163,6 +188,29 @@ console.log(s);
 // for (var i = 1 ; i <= n ; i++){
 //     s = s + 1/(i*(i+1))
 // }
+// console.log(s);
+
+//b6.2
+
+// var s = 0
+// var n = 10
+// var i = 1
+// while(i<=n){
+//     s =s +1/(i*(i+1));
+//     i++
+// }
+// console.log(s);
+
+//b6.3
+
+// var s = 0
+// var n = 10 
+// var i = 1
+// do{
+//     s = s + 1/(i*(i+1))
+//     i++
+// }
+// while(i<=n);
 // console.log(s);
 
 //b7
@@ -174,6 +222,29 @@ console.log(s);
 // }
 // console.log(s);
 
+//b7.1
+
+// var i = 1
+// var s = 0
+// var n = 10
+// while(i<=n){
+//     s = s + i/(i+1);
+//     i++
+// }
+// console.log(s);
+
+//b7.2
+
+// var i = 1
+// var s = 0
+// var n =10
+// do{
+//     s= s + i/(i+1)
+//     i++
+// }
+// while(i<=n);
+// console.log(s);
+
 //b8
 
 // var s = 0
@@ -181,6 +252,29 @@ console.log(s);
 // for (var i = 1 ; i <= n ; i++){
 //     s = s + 2*i+1/(2*i+2)
 // }
+// console.log(s);
+
+//b8.1
+
+// var i =1
+// var s =0
+// var n =10
+// while(i <=n){
+//     s = s + 2*i+1/(2*i+2);
+//     i++
+// }
+// console.log(s);
+
+//b8.2
+
+// var i = 1
+// var s = 0
+// var n =10
+// do{
+//     s = s + 2*i+1/(2*i+2);
+//     i++
+// }
+// while (i <=n);
 // console.log(s);
 
 //b9
@@ -191,6 +285,30 @@ console.log(s);
 //      s = s*i
 //  }
 //  console.log(s);
+
+//b9.1
+// var n = 10
+// var i = 2
+// var s = 1
+// while(i <=n){
+//     s = s*i;
+//     i++
+// }
+// console.log(s);
+
+// b9.2
+
+// var n = 10 
+// var i = 2
+// var s = 1
+// do{
+//     s = s*i;
+//     i++
+// }
+// while(i<=n);
+// console.log(s);
+
+
 
 
 
