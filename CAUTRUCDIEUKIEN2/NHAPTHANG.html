@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kiem tra so ngay trong thang</h1>
+    <input type="number" min="1" max="12" id="month">
+    <button onclick="checkmonth()">Check</button>
+    <p id="result"></p>
+    <script>
+var thang_1 = "1";
+var thang_2 = "2";
+var thang_3 = "3";
+var thang_4 = "4";
+var thang_5 = "5";
+var thang_6 = "6";
+var thang_7 = "7";
+var thang_8 = "8";
+var thang_9 = "9";
+var thang_10 = "10";
+var thang_11 = "11";
+var thang_12 = "12";
+function checkmonth() {
+    var month = document.getElementById("month").value;
+    switch (month) {
+        case thang_1:
+        case thang_3:
+        case thang_5:
+        case thang_7:
+        case thang_8:
+        case thang_10:
+        case thang_12:
+            document.getElementById("result").innerHTML = "Tháng " + month + " có 31 ngày"
+            break;
+        case thang_4:
+        case thang_6:
+        case thang_9:
+        case thang_11:
+            document.getElementById("result").innerHTML = "Tháng " + month + " có 30 ngày"
+            break;
+        case thang_2:
+            document.getElementById("result").innerHTML = "Tháng " + month + " có 28 hoặc 29 ngày"
+            break;
+        default:
+            document.getElementById("result").innerHTML = "Vui lòng nhập lại tháng"
+    }
+}
+    </script>
+</body>
+</html>
