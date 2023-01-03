@@ -19,23 +19,23 @@
 //}
 
 
-//var i = 1
-//var count =0
-//var number=7
-//while (i <= number){
-//    if(number % i ==0){
-//        count++;
-//    }
-//    i++
-//}
-//if (count==2){
-//    console.log("La so nguyen to");
-//}
-//else {
-//    console.log("Khong phai la so nguyen to");
-//}
+var i = 1;
+var count = 0;
+var number= 15;
+while (i <= number){
+   if(number % i ==0){
+       count++;
+   }
+   i++;
+}
+if (count==2){
+   console.log("La so nguyen to");
+}
+else {
+   console.log("Khong phai la so nguyen to");
+}
 
-var i = 1
-var count =0
-var number=7
+// var i = 1
+// var count =0
+// var number=7
 
