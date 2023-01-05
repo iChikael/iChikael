@@ -69,6 +69,20 @@
 
 
 // Câu 2. tính tổng giá trị 2 tam giác trên
+
+// let arr = [];
+// arr[0] = [2,3,4,5,7];
+// arr[1] = [4,5,4,1,7];
+// arr[2] = [2,1,6,2,7];
+// arr[3] = [2,3,3,7,7];
+// arr[4] = [1,5,4,7,9];
+// let totalTriangleUp = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr[i].length - 1 - i; j++) {
+//     totalTriangleUp += arr[i][j];
+//   }
+// }
+
 // Câu 3. tính tổng các giá trị là sô chẵn
 
 // let arr = [];
