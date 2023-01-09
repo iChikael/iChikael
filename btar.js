@@ -1,19 +1,13 @@
 var numbers =taoarray()
+
 function taoarray(size,min,max) {
     
     var numbers = [];
       for (var i = 0; i < size; i++) {
-        
-        numbers.push(Math.floor(Math.random() * (max-min+1 ) + min));
+         numbers.push(Math.floor(Math.random() * (max-min+1 ) + min));
       }
       return numbers;
     }
-
-// function hienthi(numbers) {
-//     for(let i = 0; i < numbers.length; i++){
-//         document.write(`${numbers[i]} <br>`);
-//     }
-// }
 
 function demsonguyento(numbers) {
     let count = 0;
@@ -37,20 +31,11 @@ function demsonguyento(numbers) {
     return true;
   }
 
-
-function kiemtra(numbers) {
-    // return numbers.includes(+document.getElementById('find').value);
-    for (var i = 0; i < numbers.length; i++) {
-        if (numbers[i] === +document.getElementById('find').value) {
-          return true;
-        }
-      }
-      return false;
-    }
+function kiemtra(numbers,addfind) {
+    return numbers.includes(addfind);
+}
   
-    
-
-function pro(){
+    function pro(){
     let size = +document.getElementById('size').value;
     let min = +document.getElementById('min').value;
     let max = +document.getElementById('max').value;
@@ -60,18 +45,12 @@ function pro(){
 }
 
 function findvalue(){
-    let size = +document.getElementById('size').value;
-    let min = +document.getElementById('min').value;
-    let max = +document.getElementById('max').value;
     let addfind = +document.getElementById('find').value;
-    // document.getElementById('showFind').innerText = ` ${kiemtra(numbers)} `;
     
-    if (kiemtra(numbers) === true){
-        document.getElementById('showFind').innerText = 'findValue is exist'
+    if (kiemtra(numbers,addfind) === true){
+        document.getElementById('showFind').innerText = `findValue is exist`
     }
     else {
-        document.getElementById('showFind').innerText = 'findValue is not exist'
+        document.getElementById('showFind').innerText = `findValue is not exist`
     }
-
-
 }
