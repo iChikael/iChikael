@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <caption style='text-align:left;'><strong>Show all product</caption>
+        <th>
+            <tr>
+                <td> <strong> Product Name</td>
+                <td><strong>Price</strong></td>
+                <td colspan="2"><strong>Inventory</td>
+            </tr>
+        </th>
+        <tbody id="tbBill">
+
+        </tbody>
+        <td>
+            <form id="addForm"><input type="text" id="productNameInput" placeholder="Enter product name">
+        </td>
+        <td>
+            <form id="addPrice"><input type="text" id="productPri" placeholder="Enter product price"></form>
+        </td>
+        <td>
+            <form id="addInv"><input type="text" id="productInv" placeholder="Enter product Inventory"></form>
+        </td>
+        <td><button type="button" onclick="addProduct()">Add</button></td>
+
+    </table>
+
+
+
+
+
+
+
+
+    <script src="quanlysp.js"></script>
+</body>
+
+</html>

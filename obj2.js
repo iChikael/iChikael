@@ -46,18 +46,31 @@
 // console.log(clone.name);
 // console.log(user.name);
 
-let user = {
-    name: "John",
-    sizes: {
-      height: 182,
-      width: 50
-    }
-  };
+// let user = {
+//     name: "John",
+//     sizes: {
+//       height: 182,
+//       width: 50
+//     }
+//   };
   
-  let clone = Object.assign({}, user);
+//   let clone = Object.assign({}, user);
   
-  console.log( user.sizes === clone.sizes ); // true, same object
+//   console.log( user.sizes === clone.sizes ); // true, same object
  
-  user.sizes.width = 60;    // change a property from one place
-  console.log(clone.sizes.width); // 60, get the result from the other one
+//   user.sizes.width = 60;    // change a property from one place
+//   console.log(clone.sizes.width); // 60, get he result from the other one
+
+let id = Symbol("id");
+let user = {
+  name: "John",
+  age: 30,
+  [id]: 123
+};
+
+for (let key in user) 
+console.log(key); // name, age (no symbols)
+
+// the direct access by the symbol works
+console.log( "Direct: " + user[id] ); // Direct: 123
 
