@@ -1,0 +1,56 @@
+/* .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: blue;
+    position:relative;
+    top:350px;
+    bottom: 20px;
+    left: 500px;
+  } */
+  body{
+    /* margin:0;
+    padding:0;
+    font-weight:100; */
+    /* text-shadow:1px 1px 1px rgba(100,100,100,0.4); */
+    font-family:ar;
+    text-transform:capitalize;
+    color:#f0f0f0;
+    letter-spacing:0;
+}
+@font-face{
+    font-family:ar;
+    src:url(Stuff/edgy.otf);
+}
+
+  .Widget{
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    width:1900px; 
+    height:1800px;
+    font-size:37px; 
+    background-color:#000 ;
+    opacity: 1;
+  }
+  .table {
+    border: 100px;
+    border-color: #000;
+    box-sizing: 1px;
+    border-radius: 0px;
+    position: relative;
+    /* top: 0%;
+    bottom:0%;
+    
+    /* width: 10%px; */
+    right: 10%;
+    left: 10%;
+    font-family:ar;
+    background-color: #000;
+    opacity: 1;
+    border-width: 10px;
+    padding: 10px;
+    
+
+
+  }

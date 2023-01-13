@@ -43,7 +43,7 @@ function addProduct() {
             <td>${bill[i].name}</td>
             <td style='text-align:right;'>${bill[i].price}</td>
             <td style='text-align:right;'>${bill[i].quantity}</td>
-            <td><button type="button" onclick="delProduct(${i})">Del</button></td>
+            <td><button type="button" onclick="delProduct(${i}11)">Del</button></td>
         </tr>`
     }
     document.getElementById("productNameInput").value = "";

@@ -1,0 +1,14 @@
+body{
+    
+    text-transform:capitalize;
+    color:#000;
+    letter-spacing:1;
+}
+button {
+    background-color:light-green;
+    opacity: 0.2;
+    width: 200px;
+    height: 40px;
+    
+}
+   
